@@ -1,0 +1,22 @@
+<ion-view view-title="Users">
+  <ion-nav-buttons side="primary">
+      <button class="button" ng-click="logout()">
+        Logout
+      </button>
+    </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right"
+      ng-repeat="user in users" type="item-text-wrap">
+        <img ng-src="{{user.face}}">
+        <h2>{{user.name}}</h2>
+        <p>{{user.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

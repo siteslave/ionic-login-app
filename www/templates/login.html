@@ -1,0 +1,16 @@
+<ion-view view-title="Login">
+  <ion-content class="padding">
+    <h2>Please login</h2>
+<div class="list list-inset">
+  <label class="item item-input">
+    <input type="text" placeholder="First Name" ng-model="user.username">
+  </label>
+  <label class="item item-input">
+    <input type="text" placeholder="Last Name" ng-model="user.password">
+  </label>
+</div>
+<div class="padding">
+  <button class="button button-block button-positive activated" ng-click="doLogin()">Login</button>
+</div>
+  </ion-content>
+</ion-view>
